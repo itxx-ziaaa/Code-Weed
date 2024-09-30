@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Code & Weed</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Body and General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1d1f21;
+            color: #c0c0c0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3, h4 {
+            color: #00ff00;
+            text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+        }
+
+        a {
+            color: #00ff00;
+            text-decoration: none;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        a:hover {
+            color: #009900;
+            text-shadow: 0 0 15px rgba(0, 153, 0, 0.7);
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            position: relative;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 255, 0, 0.2));
+            box-shadow: 0 4px 20px rgba(0, 255, 0, 0.5);
+        }
+
+        /* About Section Styles */
+        .about-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 50px 20px;
+            animation: fadeInUp 1s;
+        }
+
+        .about-item {
+            background-color: #1d1f21;
+            border: 2px solid #00ff00;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            animation: slideIn 1s;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .about-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 255, 0, 0.5);
+        }
+
+        .about-item h2 {
+            color: #00ff00;
+            text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+            margin-bottom: 10px;
+        }
+
+        .about-item p {
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+
+        /* Keyframes */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, rgba(0, 255, 0, 0.2), rgba(0, 0, 0, 0.8));
+            color: #c0c0c0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>About Us</h1>
+    </header>
+
+    <div class="about-section">
+        <div class="about-item">
+            <h2>Who We Are</h2>
+            <p>At Code & Weed, we are passionate about bridging the gap between coding and creativity. Our team consists of skilled developers, designers, and tech enthusiasts dedicated to building a community around ethical hacking and innovative solutions.</p>
+        </div>
+
+        <div class="about-item">
+            <h2>Our Mission</h2>
+            <p>Our mission is to empower individuals through knowledge and skills in cybersecurity. We strive to create a safe and secure digital environment for everyone while promoting ethical practices in technology.</p>
+        </div>
+
+        <div class="about-item">
+            <h2>Join Us</h2>
+            <p>Be a part of our community! Whether you're a beginner or an expert, there’s a place for you at Code & Weed. Together, we can learn, grow, and make a difference in the tech world.</p>
+        </div>
+    </div>
+
+    <footer>
+        <a href="index.html">Back to Previous Page</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,365 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1d1f21;
+    color: #c0c0c0;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    color: #00ff00;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+}
+
+a {
+    color: #00ff00;
+    text-decoration: none;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+a:hover {
+    color: #009900;
+    text-shadow: 0 0 15px rgba(0, 153, 0, 0.7);
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 255, 0, 0.2));
+    box-shadow: 0 4px 20px rgba(0, 255, 0, 0.5);
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* Logo */
+.logo img {
+    max-width: 100px;
+    margin: 20px 0;
+    transition: transform 0.3s;
+}
+
+.logo img:hover {
+    transform: rotate(360deg);
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 100px 0;
+    animation: fadeIn 1s;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    background-color: #282a2e;
+    animation: slideIn 1s;
+    border-top: 5px solid #00ff00;
+    border-bottom: 5px solid #00ff00;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service {
+    background-color: #1d1f21;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.5);
+}
+
+.service i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Portfolio & Projects Section */
+.portfolio, .projects {
+    padding: 50px 20px;
+    animation: fadeInUp 1s;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 255, 0, 0.5);
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 20px;
+    background-color: #282a2e;
+    animation: slideIn 1s;
+    border: 1px solid #00ff00;
+    border-radius: 10px;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial {
+    margin: 15px;
+    padding: 20px;
+    background-color: #1d1f21;
+    border: 1px solid #00ff00;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+}
+
+/* FAQ Section */
+.faq {
+    padding: 50px 20px;
+    background-color: #282a2e;
+    animation: fadeInUp 1s;
+}
+
+.faq-item {
+    margin: 15px 0;
+}
+
+/* Members Section */
+.members {
+    padding: 50px 20px;
+    animation: slideIn 1s;
+    border: 1px solid #00ff00;
+    border-radius: 10px;
+    background-color: #282a2e;
+}
+
+.member {
+    background-color: #1d1f21;
+    border: 1px solid #00ff00;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 255, 0, 0.5);
+}
+
+.member img {
+    border-radius: 50%;
+    width: 100px;
+}
+
+/* Blog Section */
+.blog {
+    padding: 50px 20px;
+    animation: fadeInUp 1s;
+}
+
+.blog-post-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blog-post {
+    background-color: #1d1f21;
+    border: 1px solid #00ff00;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+}
+
+/* Resources Section */
+.resources {
+    padding: 50px 20px;
+    background-color: #282a2e;
+    animation: slideIn 1s;
+}
+
+.resource-list {
+    list-style: none;
+    padding: 0;
+}
+
+.resource-list li {
+    margin: 10px 0;
+}
+
+/* Case Studies Section */
+.case-studies {
+    padding: 50px 20px;
+    animation: fadeInUp 1s;
+}
+
+.case-study {
+    margin: 15px;
+    padding: 20px;
+    background-color: #1d1f21;
+    border: 1px solid #00ff00;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.case-study:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    animation: fadeInUp 1s;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input, .contact textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    background-color: #282a2e;
+    color: #ffffff;
+    transition: border-color 0.3s;
+}
+
+.contact input:focus, .contact textarea:focus {
+    border-color: #009900;
+}
+
+.contact button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #00ff00;
+    color: #1d1f21;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact button:hover {
+    background-color: #009900;
+    transform: translateY(-2px);
+}
+
+/* Social Media */
+.social-media {
+    margin: 10px 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
